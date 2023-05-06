@@ -1,0 +1,45 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/product/related">Related Products Managing</a></li>
+        <li>Edit</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="prdt">
+  <div class="container">
+    <div class="prdt-top">
+      <div class="col-md-12">
+        <div class="product-one signup">
+          <div class="register-top heading">
+            <h2>EDIT <%= @product.title %></h2>
+          </div>
+
+          <div class="register-main">
+            <div class="col-md-6 account-left">
+              <%= simple_form_for(@product, url: admin_product_related_url, html: {method: :put}) do |f| %>
+                <%= f.error_notification %>
+                <div class="form-group">
+                <%= f.association :related, label: "Related products", as: :check_boxes %>
+                </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Update", class: "btn btn-success" %>
+                </div>
+              <% end %>
+              <br>
+              <div style="height:10px;font-size:10px;">&nbsp;</div>
+              <%= link_to "Delete product", admin_product_path,
+                    data: {confirm: "Are you sure?"}, method: :delete, class: "btn btn-danger" %>
+              <div style="height:10px;font-size:10px;">&nbsp;</div>
+              <%= link_to "Back", 'javascript:history.back()', class: "btn btn-default" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

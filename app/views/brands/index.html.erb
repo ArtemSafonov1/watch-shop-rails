@@ -1,0 +1,39 @@
+<!--start-breadcrumbs-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><%= link_to 'Brands', brands_path %></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!--end-breadcrumbs-->
+<div class="prdt">
+  <div class="container">
+    <div class="prdt-top">
+      <div class="col-md-12 prdt-left">
+      <% if !@brands.empty? %>
+        <div class="brands__items">
+        <% @brands.each do |brand| %>
+          <article class="brands__item">
+            <div class="brands__item-wrap">
+              <div class="brands__item-image">
+                <%= link_to(image_tag(brand.img, alt: "", class: "img-responsive zoom-img"), brand) %>
+              </div>
+              <div class="brands__item-title">
+                <%= link_to "#{brand.title}", brand %>
+              </div>
+            </div>
+          </article>
+        <% end %>
+        </div>
+      <% else %>
+        <h3>There's no brands...</h3>
+      <% end %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

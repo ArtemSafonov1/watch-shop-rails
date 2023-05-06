@@ -1,0 +1,227 @@
+=> [32m#<Axlsx::Worksheet:0x00007fffe7cfb568[0m
+ @col_breaks[32m=[0m[32m#<Axlsx::ColBreaks:0x00007fffe7cfb270[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBreak[0m], @list[32m=[0m[][32m>[0m,
+ @column_info[32m=[0m
+  [32m#<Axlsx::Cols:0x00007fffe962e1e8[0m
+   @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mCol[0m],
+   @list[32m=[0m
+    [[32m#<Axlsx::Col:0x00007fffe962e0d0[0m @best_fit[32m=[0m[1;36mtrue[0m, @custom_width[32m=[0m[1;36mtrue[0m, @max[32m=[0m[1;34m1[0m, @min[32m=[0m[1;34m1[0m, @width[32m=[0m[1;35m16.5[0m[32m>[0m,
+     [32m#<Axlsx::Col:0x00007fffe962d630[0m @best_fit[32m=[0m[1;36mtrue[0m, @custom_width[32m=[0m[1;36mtrue[0m, @max[32m=[0m[1;34m2[0m, @min[32m=[0m[1;34m2[0m, @width[32m=[0m[1;35m9.9[0m[32m>[0m,
+     [32m#<Axlsx::Col:0x00007fffe962d298[0m @best_fit[32m=[0m[1;36mtrue[0m, @custom_width[32m=[0m[1;36mtrue[0m, @max[32m=[0m[1;34m3[0m, @min[32m=[0m[1;34m3[0m, @width[32m=[0m[1;35m8.8[0m[32m>[0m],
+   @worksheet[32m=[0m[32m#<Axlsx::Worksheet:0x00007fffe7cfb568[0m ...[32m>[0m[32m>[0m,
+ @name[32m=[0m[31m[1;31m"[0m[31mBasic Worksheet[1;31m"[0m[31m[0m,
+ @row_breaks[32m=[0m[32m#<Axlsx::RowBreaks:0x00007fffe7cfb310[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBreak[0m], @list[32m=[0m[][32m>[0m,
+ @rows[32m=[0m
+  [32m#<Axlsx::SimpleTypedList:0x00007fffe962e698[0m
+   @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mRow[0m],
+   @list[32m=[0m
+    [[32m#<Axlsx::Row:0x00007fffe962e878[0m
+      @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mCell[0m],
+      @list[32m=[0m
+       [[32m#<Axlsx::Cell:0x00007fffe962e4b8[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962e878[0m ...[32m>[0m, @value[32m=[0m[31m[1;31m"[0m[31mFirst Column[1;31m"[0m[31m[0m[32m>[0m,
+        [32m#<Axlsx::Cell:0x00007fffe962e418[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962e878[0m ...[32m>[0m, @value[32m=[0m[31m[1;31m"[0m[31mSecond[1;31m"[0m[31m[0m[32m>[0m,
+        [32m#<Axlsx::Cell:0x00007fffe962e3a0[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962e878[0m ...[32m>[0m, @value[32m=[0m[31m[1;31m"[0m[31mThird[1;31m"[0m[31m[0m[32m>[0m],
+      @worksheet[32m=[0m[32m#<Axlsx::Worksheet:0x00007fffe7cfb568[0m ...[32m>[0m[32m>[0m,
+     [32m#<Axlsx::Row:0x00007fffe962ca50[0m
+      @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mCell[0m],
+      @list[32m=[0m
+       [[32m#<Axlsx::Cell:0x00007fffe962c028[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962ca50[0m ...[32m>[0m, @type[32m=[0m[33m:integer[0m, @value[32m=[0m[1;34m1[0m[32m>[0m,
+        [32m#<Axlsx::Cell:0x00007fffe964bc20[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962ca50[0m ...[32m>[0m, @type[32m=[0m[33m:integer[0m, @value[32m=[0m[1;34m2[0m[32m>[0m,
+        [32m#<Axlsx::Cell:0x00007fffe964b6d0[0m @row[32m=[0m[32m#<Axlsx::Row:0x00007fffe962ca50[0m ...[32m>[0m, @type[32m=[0m[33m:integer[0m, @value[32m=[0m[1;34m3[0m[32m>[0m],
+      @worksheet[32m=[0m[32m#<Axlsx::Worksheet:0x00007fffe7cfb568[0m ...[32m>[0m[32m>[0m][32m>[0m,
+ @sheet_id[32m=[0m[1;34m1[0m,
+ @sheet_protection[32m=[0m[1;36mnil[0m,
+ @styles[32m=[0m
+  [32m#<Axlsx::Styles:0x00007fffe7d3f4c0[0m
+   @borders[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3cc48[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorder[0m],
+     @list[32m=[0m
+      [[32m#<Axlsx::Border:0x00007fffe7d3cbd0[0m
+        @prs[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d3cb80[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorderPr[0m], @list[32m=[0m[][32m>[0m[32m>[0m,
+       [32m#<Axlsx::Border:0x00007fffe7d3cae0[0m
+        @prs[32m=[0m
+         [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3ca40[0m
+          @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorderPr[0m],
+          @list[32m=[0m
+           [[32m#<Axlsx::BorderPr:0x00007fffe7d3c658[0m
+             @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d3c900[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+             @name[32m=[0m[33m:left[0m,
+             @style[32m=[0m[33m:thin[0m[32m>[0m,
+            [32m#<Axlsx::BorderPr:0x00007fffe7d2bdd0[0m
+             @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d3d8a0[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+             @name[32m=[0m[33m:right[0m,
+             @style[32m=[0m[33m:thin[0m[32m>[0m,
+            [32m#<Axlsx::BorderPr:0x00007fffe7d2b330[0m
+             @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d2bb28[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+             @name[32m=[0m[33m:top[0m,
+             @style[32m=[0m[33m:thin[0m[32m>[0m,
+            [32m#<Axlsx::BorderPr:0x00007fffe7d199c8[0m
+             @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d2a1b0[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+             @name[32m=[0m[33m:bottom[0m,
+             @style[32m=[0m[33m:thin[0m[32m>[0m][32m>[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m2[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mborders[1;31m"[0m[31m[0m[32m>[0m,
+   @cellStyleXfs[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d230b8[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mXf[0m],
+     @list[32m=[0m[[32m#<Axlsx::Xf:0x00007fffe7d22320[0m @borderId[32m=[0m[1;34m0[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m1[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellStyleXfs[1;31m"[0m[31m[0m[32m>[0m,
+   @cellStyles[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d03fb0[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mCellStyle[0m],
+     @list[32m=[0m[[32m#<Axlsx::CellStyle:0x00007fffe7d03e98[0m @builtinId[32m=[0m[1;34m0[0m, @name[32m=[0m[31m[1;31m"[0m[31mNormal[1;31m"[0m[31m[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m1[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellStyles[1;31m"[0m[31m[0m[32m>[0m,
+   @cellXfs[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d03970[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mXf[0m],
+     @list[32m=[0m
+      [[32m#<Axlsx::Xf:0x00007fffe7d03880[0m @borderId[32m=[0m[1;34m0[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m,
+       [32m#<Axlsx::Xf:0x00007fffe7d03308[0m @borderId[32m=[0m[1;34m1[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m,
+       [32m#<Axlsx::Xf:0x00007fffe7d01c38[0m @applyNumberFormat[32m=[0m[1;34m1[0m, @borderId[32m=[0m[1;34m0[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m14[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m3[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellXfs[1;31m"[0m[31m[0m[32m>[0m,
+   @dxfs[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d00e50[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mDxf[0m],
+     @list[32m=[0m[],
+     @locked_at[32m=[0m[1;34m0[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mdxfs[1;31m"[0m[31m[0m[32m>[0m,
+   @fills[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3d3c8[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mFill[0m],
+     @list[32m=[0m
+      [[32m#<Axlsx::Fill:0x00007fffe7d3cf40[0m @fill_type[32m=[0m[32m#<Axlsx::PatternFill:0x00007fffe7d3d300[0m @patternType[32m=[0m[33m:none[0m[32m>[0m[32m>[0m,
+       [32m#<Axlsx::Fill:0x00007fffe7d3cd38[0m @fill_type[32m=[0m[32m#<Axlsx::PatternFill:0x00007fffe7d3ce00[0m @patternType[32m=[0m[33m:gray125[0m[32m>[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m2[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mfills[1;31m"[0m[31m[0m[32m>[0m,
+   @fonts[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3e110[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mFont[0m],
+     @list[32m=[0m[[32m#<Axlsx::Font:0x00007fffe7d3de68[0m @family[32m=[0m[1;34m1[0m, @name[32m=[0m[31m[1;31m"[0m[31mArial[1;31m"[0m[31m[0m, @sz[32m=[0m[1;34m11[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m1[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mfonts[1;31m"[0m[31m[0m[32m>[0m,
+   @numFmts[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3f448[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mNumFmt[0m],
+     @list[32m=[0m
+      [[32m#<Axlsx::NumFmt:0x00007fffe7d3f2e0[0m @formatCode[32m=[0m[31m[1;31m"[0m[31myyyy/mm/dd[1;31m"[0m[31m[0m, @numFmtId[32m=[0m[1;34m100[0m[32m>[0m,
+       [32m#<Axlsx::NumFmt:0x00007fffe7d3ed90[0m @formatCode[32m=[0m[31m[1;31m"[0m[31myyyy/mm/dd hh:mm:ss[1;31m"[0m[31m[0m, @numFmtId[32m=[0m[1;34m101[0m[32m>[0m],
+     @locked_at[32m=[0m[1;34m2[0m,
+     @serialize_as[32m=[0m[31m[1;31m"[0m[31mnumFmts[1;31m"[0m[31m[0m[32m>[0m,
+   @tableStyles[32m=[0m
+    [32m#<Axlsx::TableStyles:0x00007fffe7d00d10[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mTableStyle[0m],
+     @defaultPivotStyle[32m=[0m[31m[1;31m"[0m[31mPivotStyleLight16[1;31m"[0m[31m[0m,
+     @defaultTableStyle[32m=[0m[31m[1;31m"[0m[31mTableStyleMedium9[1;31m"[0m[31m[0m,
+     @list[32m=[0m[],
+     @locked_at[32m=[0m[1;34m0[0m[32m>[0m[32m>[0m,
+ @workbook[32m=[0m
+  [32m#<Axlsx::Workbook:0x00007fffe7d3f538[0m
+   @bold_font_multiplier[32m=[0m[1;35m1.5[0m,
+   @charts[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d008d8[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mChart[0m], @list[32m=[0m[][32m>[0m,
+   @comments[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d00540[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mComments[0m], @list[32m=[0m[][32m>[0m,
+   @drawings[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d00950[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mDrawing[0m], @list[32m=[0m[][32m>[0m,
+   @font_scale_divisor[32m=[0m[1;35m10.0[0m,
+   @images[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d00798[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mPic[0m], @list[32m=[0m[][32m>[0m,
+   @pivot_tables[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d00658[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mPivotTable[0m], @list[32m=[0m[][32m>[0m,
+   @styles[32m=[0m
+    [32m#<Axlsx::Styles:0x00007fffe7d3f4c0[0m
+     @borders[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3cc48[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorder[0m],
+       @list[32m=[0m
+        [[32m#<Axlsx::Border:0x00007fffe7d3cbd0[0m
+          @prs[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d3cb80[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorderPr[0m], @list[32m=[0m[][32m>[0m[32m>[0m,
+         [32m#<Axlsx::Border:0x00007fffe7d3cae0[0m
+          @prs[32m=[0m
+           [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3ca40[0m
+            @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mBorderPr[0m],
+            @list[32m=[0m
+             [[32m#<Axlsx::BorderPr:0x00007fffe7d3c658[0m
+               @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d3c900[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+               @name[32m=[0m[33m:left[0m,
+               @style[32m=[0m[33m:thin[0m[32m>[0m,
+              [32m#<Axlsx::BorderPr:0x00007fffe7d2bdd0[0m
+               @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d3d8a0[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+               @name[32m=[0m[33m:right[0m,
+               @style[32m=[0m[33m:thin[0m[32m>[0m,
+              [32m#<Axlsx::BorderPr:0x00007fffe7d2b330[0m
+               @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d2bb28[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+               @name[32m=[0m[33m:top[0m,
+               @style[32m=[0m[33m:thin[0m[32m>[0m,
+              [32m#<Axlsx::BorderPr:0x00007fffe7d199c8[0m
+               @color[32m=[0m[32m#<Axlsx::Color:0x00007fffe7d2a1b0[0m @rgb[32m=[0m[31m[1;31m"[0m[31mFF000000[1;31m"[0m[31m[0m[32m>[0m,
+               @name[32m=[0m[33m:bottom[0m,
+               @style[32m=[0m[33m:thin[0m[32m>[0m][32m>[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m2[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mborders[1;31m"[0m[31m[0m[32m>[0m,
+     @cellStyleXfs[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d230b8[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mXf[0m],
+       @list[32m=[0m[[32m#<Axlsx::Xf:0x00007fffe7d22320[0m @borderId[32m=[0m[1;34m0[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m1[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellStyleXfs[1;31m"[0m[31m[0m[32m>[0m,
+     @cellStyles[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d03fb0[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mCellStyle[0m],
+       @list[32m=[0m[[32m#<Axlsx::CellStyle:0x00007fffe7d03e98[0m @builtinId[32m=[0m[1;34m0[0m, @name[32m=[0m[31m[1;31m"[0m[31mNormal[1;31m"[0m[31m[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m1[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellStyles[1;31m"[0m[31m[0m[32m>[0m,
+     @cellXfs[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d03970[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mXf[0m],
+       @list[32m=[0m
+        [[32m#<Axlsx::Xf:0x00007fffe7d03880[0m @borderId[32m=[0m[1;34m0[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m,
+         [32m#<Axlsx::Xf:0x00007fffe7d03308[0m @borderId[32m=[0m[1;34m1[0m, @fillId[32m=[0m[1;34m0[0m, @fontId[32m=[0m[1;34m0[0m, @numFmtId[32m=[0m[1;34m0[0m, @xfId[32m=[0m[1;34m0[0m[32m>[0m,
+         [32m#<Axlsx::Xf:0x00007fffe7d01c38[0m
+          @applyNumberFormat[32m=[0m[1;34m1[0m,
+          @borderId[32m=[0m[1;34m0[0m,
+          @fillId[32m=[0m[1;34m0[0m,
+          @fontId[32m=[0m[1;34m0[0m,
+          @numFmtId[32m=[0m[1;34m14[0m,
+          @xfId[32m=[0m[1;34m0[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m3[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mcellXfs[1;31m"[0m[31m[0m[32m>[0m,
+     @dxfs[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d00e50[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mDxf[0m],
+       @list[32m=[0m[],
+       @locked_at[32m=[0m[1;34m0[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mdxfs[1;31m"[0m[31m[0m[32m>[0m,
+     @fills[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3d3c8[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mFill[0m],
+       @list[32m=[0m
+        [[32m#<Axlsx::Fill:0x00007fffe7d3cf40[0m @fill_type[32m=[0m[32m#<Axlsx::PatternFill:0x00007fffe7d3d300[0m @patternType[32m=[0m[33m:none[0m[32m>[0m[32m>[0m,
+         [32m#<Axlsx::Fill:0x00007fffe7d3cd38[0m @fill_type[32m=[0m[32m#<Axlsx::PatternFill:0x00007fffe7d3ce00[0m @patternType[32m=[0m[33m:gray125[0m[32m>[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m2[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mfills[1;31m"[0m[31m[0m[32m>[0m,
+     @fonts[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3e110[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mFont[0m],
+       @list[32m=[0m[[32m#<Axlsx::Font:0x00007fffe7d3de68[0m @family[32m=[0m[1;34m1[0m, @name[32m=[0m[31m[1;31m"[0m[31mArial[1;31m"[0m[31m[0m, @sz[32m=[0m[1;34m11[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m1[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mfonts[1;31m"[0m[31m[0m[32m>[0m,
+     @numFmts[32m=[0m
+      [32m#<Axlsx::SimpleTypedList:0x00007fffe7d3f448[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mNumFmt[0m],
+       @list[32m=[0m
+        [[32m#<Axlsx::NumFmt:0x00007fffe7d3f2e0[0m @formatCode[32m=[0m[31m[1;31m"[0m[31myyyy/mm/dd[1;31m"[0m[31m[0m, @numFmtId[32m=[0m[1;34m100[0m[32m>[0m,
+         [32m#<Axlsx::NumFmt:0x00007fffe7d3ed90[0m @formatCode[32m=[0m[31m[1;31m"[0m[31myyyy/mm/dd hh:mm:ss[1;31m"[0m[31m[0m, @numFmtId[32m=[0m[1;34m101[0m[32m>[0m],
+       @locked_at[32m=[0m[1;34m2[0m,
+       @serialize_as[32m=[0m[31m[1;31m"[0m[31mnumFmts[1;31m"[0m[31m[0m[32m>[0m,
+     @tableStyles[32m=[0m
+      [32m#<Axlsx::TableStyles:0x00007fffe7d00d10[0m
+       @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mTableStyle[0m],
+       @defaultPivotStyle[32m=[0m[31m[1;31m"[0m[31mPivotStyleLight16[1;31m"[0m[31m[0m,
+       @defaultTableStyle[32m=[0m[31m[1;31m"[0m[31mTableStyleMedium9[1;31m"[0m[31m[0m,
+       @list[32m=[0m[],
+       @locked_at[32m=[0m[1;34m0[0m[32m>[0m[32m>[0m,
+   @tables[32m=[0m[32m#<Axlsx::SimpleTypedList:0x00007fffe7d006d0[0m @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mTable[0m], @list[32m=[0m[][32m>[0m,
+   @use_autowidth[32m=[0m[1;36mtrue[0m,
+   @worksheets[32m=[0m
+    [32m#<Axlsx::SimpleTypedList:0x00007fffe7d00bf8[0m
+     @allowed_types[32m=[0m[[1;34;4mAxlsx[0m::[1;34;4mWorksheet[0m],
+     @list[32m=[0m[[32m#<Axlsx::Worksheet:0x00007fffe7cfb568[0m ...[32m>[0m][32m>[0m[32m>[0m[32m>[0m

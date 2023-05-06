@@ -1,0 +1,22 @@
+<html>
+  <head>
+  </head>
+    <body>
+      <h2><strong>Product information:</strong></h2>
+      <p>
+        <img src="http://localhost:3000<%= asset_path @product.img%>" style="width: 140px; height: 140px;">
+      </p>
+      <p><%= image_tag(@product.img, class:"img", alt:"140x140", style:"width: 140px; height: 140px;") %></p>
+      <p>Title: <%= @product.title %></p>
+      <p>Bytitle: <%= @product.bytitle %></p>
+      <p>Brand: <%= @product.brand.title %></p>
+      <p>Category: <%= @product.category.title %></p>
+      <p>Content: <%= @product.content %></p>
+      <p>Price: <%= @product.price %></p>
+      <p>Old Price: <%= @product.old_price %></p>
+      <p>Status: <%= @product.status %></p>
+      <p>Quantity: <%= @product.quantity %></p>
+      <p>Created at: <%= @product.created_at %></p>
+      <p>Updated at: <%= @product.updated_at %></p>
+    </body>
+</html>

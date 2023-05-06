@@ -1,0 +1,72 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/brand/new">Add Brans</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="prdt">
+  <div class="container">
+    <div class="prdt-top">
+      <div class="col-md-12">
+        <div class="product-one signup">
+          <div class="register-top heading">
+            <h2>CREATE BRAND</h2>
+          </div>
+
+          <div class="register-main">
+            <div class="col-md-6 account-left">
+              <%= simple_form_for(@brand, url: admin_brand_index_url, html: {method: :post}) do |f| %>
+                <%= f.error_notification %>
+                <div class="form-group">
+                  <%= f.input :title,
+                              required: true,
+                              autofocus: true,
+                              input_html: {class: "form-control"}
+                  %> 
+                </div>
+                <div class="form-group">
+                  <%= f.input :bytitle,
+                              required: false,
+                              input_html: {class: "form-control"}
+                  %> 
+                </div>
+                <div class="form-group">
+                  <%= f.input :description,
+                              as: :text,
+                              required: true,
+                              input_html: {class: "form-control", rows: 2, style:"resize:none"}
+                  %>
+                </div>
+                <div class="form-group">
+                  <label class="string optional">Brand image</label>
+                  <p>
+                    <% if @brand.img %>
+                      <%= image_tag(@brand.img, class:"img", alt:"140x140", style:"width: 140px; height: 140px;") %>
+                    <% else %>
+                      No image
+                    <% end %>
+                  </p>
+                  <%= f.file_field(:img,
+                                   label: "Add an img",
+                                   accept: 'image/*')
+                  %>
+                </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Create", class: "btn btn-success" %>
+                </div>
+              <% end %>
+              <br>
+              <div style="height:10px;font-size:10px;">&nbsp;</div>
+              <%= link_to "Back", 'javascript:history.back()', class: "btn btn-default" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="single">
+  <div class="single-main">
+    <div class="register-top heading">
+      <p><h2>WELCOME <%= @user.email %></h2></p>
+    </div>
+    <br>
+    <div class="container">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h1 class="panel-title" id="panel-title" style="font-size: 36px;">Profile Information 
+          <%= link_to "Edit", edit_user_registration_path , class: "btn btn-default" %></h1>
+        </div>
+        <div class="panel-body bio-graph-info">
+          <div class="row">
+            <div class="bio-row">
+                <p><span><b>First Name</b> </span>: <%= @user.first_name %></p>
+            </div>
+            <div class="bio-row">
+                <p><span><b>Last Name</b> </span>: <%= @user.last_name %></p>
+            </div>
+            <div class="bio-row">
+                <p><span><b>Address</b> </span>: <%= @user.address %></p>
+            </div>
+            <div class="bio-row">
+                <p><span><b>Country</b> </span>: <%= @user.country %></p>
+            </div>
+            <div class="bio-row">
+                <p><span><b>Email</b> </span>: <%= @user.email %></p>
+            </div>
+            <div class="bio-row">
+                <p><span><b>Phone</b> </span>: <%= @user.phone %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h1 class="panel-title" id="panel-title" style="font-size: 36px;">Order Information</h1>
+        </div>
+        <div class="panel-body bio-graph-info">
+        <% unless @user.orders.empty? %>
+          <div class="table">
+            <table id="productSizes" class="table">
+              <thead>
+                <tr>
+                  <th style="width:5%">№</th>
+                  <th style="width:15%;">Created at</th>
+                  <th style="width:15%;">Updated at</th>
+                  <th style="width:10%;">Status</th>
+                  <th style="width:40%;">Comment</th>
+                  <th style="width:5%"></th>
+                </tr>
+              </thead>
+              <tbody>
+              <% i=0 %>
+                <% @user.orders.each do |order|%>
+                <tr>
+                  <td scope="row"><strong><%= order.id %></strong></th>
+                  <td><%= order.created_at.to_datetime.to_s(:db) %></td>
+                  <td><%= order.updated_at.to_datetime.to_s(:db) %></td>
+                  <td><%= order.status %></td>
+                  <td><%= order.comment %></td>
+                  <td><%= link_to 'Show', "/order/#{order.id}" %></td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        <% else %>
+          No orders
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

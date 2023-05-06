@@ -1,0 +1,126 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/user/order">User Orders Managing</a></li>
+        <li>Order № <%= @order.id %></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="single">
+  <div class="single-main">
+    <div class="register-top heading">
+      <p>
+        <h2>ORDER № <%= @order.id %></h2>
+      </p>
+    </div>
+    <div class="container">
+    <% if current_user.admin? %>
+      <% unless @order.orders_products.empty? %>
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+              <th style="width:30%;">Photo</th>
+              <th style="width:30%;">Name</th>
+              <th style="width:20%;">Color</th>
+              <th>Size</th>
+              <th>Amount</th>
+              <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% qty = [] %>
+            <% sum = [] %>
+            <% @order.orders_products.each do |order_product| %>
+              <tr>
+                <td>
+                  <% if order_product.product %>
+                    <% if order_product.product.img.nil? %>
+                      <%= link_to(order_product.product.title, order_product.product) %>
+                    <% else %>
+                      <%= link_to(image_tag(order_product.product.img, size: "125x200"), order_product.product) %>
+                    <% end %>
+                  <% else %>
+                    Sorry, but the item has been removed.
+                  <% end %>
+                </td>
+                <td>
+                  <% if order_product.product %>
+                    <%= link_to(order_product.product.title, order_product.product) %>
+                  <% end %>
+                </td>
+                <td>
+                  <%= order_product.color %>
+                </td>
+                <td>
+                  <%= order_product.size %>
+                </td>
+                <td>
+                  <% qty << order_product.quantity%><%= order_product.quantity %>psc.
+                </td>
+                <% pr = order_product.quantity * order_product.price %>
+                <% sum << pr %>
+                <td><%= order_product.price %> </td>
+              </tr>
+            <% end %>
+            <tr>
+              <td>Total Amount:</td>
+              <td colspan="5" class="text-right cart-qty"><%= qty.sum %> psc.</td>
+            </tr>
+            <tr>
+              <td>Total Price:</td>
+              <td colspan="5" class="text-right cart-sum"><%= format("%.2f", sum.sum) %>$</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title" id="panel-title" style="font-size: 36px;">User Profile Information </h2>
+            </div>
+            <div class="panel-body bio-graph-info">
+              <div class="row">
+                <div class="bio-row">
+                    <p color="black"><span><b>First Name</b> </span>: <%= @order.user.first_name %></p>
+                </div>
+                <div class="bio-row">
+                    <p><span><b>Last Name</b> </span>: <%= @order.user.last_name %></p>
+                </div>
+                <div class="bio-row">
+                    <p><span><b>Address</b> </span>: <%= @order.user.address %></p>
+                </div>
+                <div class="bio-row">
+                    <p><span><b>Country</b> </span>: <%= @order.user.country %></p>
+                </div>
+                <div class="bio-row">
+                    <p><span><b>Email</b> </span>: <%= @order.user.email %></p>
+                </div>
+                <div class="bio-row">
+                    <p><span><b>Phone</b> </span>: <%= @order.user.phone %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input text optional">
+            <label class="text optional">Comment</label>
+            <textarea readonly class="text optional form-control" rows="2" style="resize:none"><%= @order.comment %></textarea>
+          </div><p></p>
+        </div>
+        <div class="row">
+          <div class="col-md-10"><%= link_to "Back", 'javascript:history.back()', class: "btn btn-default" %></div>
+        </div>
+      <% else %>
+        <h3>Error during loading</h3>
+      <% end %>
+    <% else %>
+      <h3>How you find this page?</h3>
+    <% end %>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

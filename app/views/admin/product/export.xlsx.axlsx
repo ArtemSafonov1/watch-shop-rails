@@ -1,0 +1,21 @@
+wb = xlsx_package.workbook
+image = File.expand_path("app/assets/images/#{@product.img}")
+wb.add_worksheet(name: "Buttons") do |sheet|
+  sheet.add_row ["Product information"]
+  sheet.add_row ["title:", @product.title]
+  sheet.add_row ["bytitle:", @product.bytitle]
+  sheet.add_row ["brand:", @product.brand.title]
+  sheet.add_row ["category:", @product.category.title]
+  sheet.add_row ["content:", @product.content]
+  sheet.add_row ["price:", @product.price]
+  sheet.add_row ["old price:", @product.old_price]
+  sheet.add_row ["status:", @product.status]
+  sheet.add_row ["keywords:", @product.keywords]
+  sheet.add_row ["quantity:", @product.quantity]
+  sheet.add_row ["created_at", @product.created_at]
+  sheet.add_row ["updated_at", @product.updated_at]
+  sheet.add_row []
+  sheet.add_row ["Product image:"]
+  sheet.add_image(image_src: image, start_at: 'A16', width: 200, height: 200)
+  sheet.column_widths nil, 20
+end

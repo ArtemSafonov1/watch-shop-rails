@@ -1,0 +1,49 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/brand">Brand Managing</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="single">
+  <div class="single-main">
+    <div class="register-top heading">
+      <p><h2>EDIT BRAND</h2></p>
+    </div>
+    <div class="container">
+      <div class="table">
+        <table id="productSizes" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th style="width:5%">№</th>
+              <th style="width:10%">Title</th>
+              <th style="width:10%">ByTitle</th>
+              <th style="width:20%">Description</th>
+              <th colspan="3" style="width:5%"></th>
+            </tr>
+          </thead>
+          <tbody>
+          <% i=0 %>
+          <% @brands.each do |brand| %>
+            <tr>
+              <td scope="row"><strong><%= i+=1 %></strong></th>
+              <td><%= brand.title %></td>
+              <td><%= brand.bytitle %></td>
+              <td><%= brand.description %></td>
+              <td><%= link_to 'Show', brand %></td>
+              <td><%= link_to 'Edit', edit_admin_brand_path(brand.id) %></td>
+              <td><%= link_to 'Destroy', admin_brand_path(brand.id),
+                        data: {confirm: "Are you sure?"}, method: :delete %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

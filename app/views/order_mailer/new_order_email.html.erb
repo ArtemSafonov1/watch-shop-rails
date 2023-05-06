@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got a new order from <%= @order.user.email %>!</p>
+    <p>
+    User details<br>
+    --------------------------
+    </p>
+    <p>Name: <%= @order.user.first_name %></p>
+    <p>Email: <%= @order.user.email %></p>
+    <p>Address: <%= @order.user.address %></p>
+    <p>Country: <%= @order.user.country %></p>
+    <p>Phone: <%= @order.user.phone %></p>
+    <p>
+    Order details<br>
+    --------------------------
+    </p>
+    <% @order.products.each do |product| %>
+      <p>Product: <%= product.title %></p>
+      <p>Brand: <%= product.brand.title %></p>
+      <p>Quantity: <%= product.quantity %></p>
+      <p>Price: <%= product.price %></p>
+      <p>
+    <% end %>
+    Comment:<br>
+    ----------
+    </p>
+    <p><%= @order.comment %></p>
+  </body>
+</html>

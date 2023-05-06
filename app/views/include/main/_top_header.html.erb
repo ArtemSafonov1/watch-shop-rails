@@ -1,0 +1,106 @@
+  <nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse center" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/product">Products</a></li>
+          <li><a href="/brands">Brands</a></li>
+          <li><a href="/about">About us</a></li>
+          <% if user_signed_in?%>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <% if current_user.try(:admin?) %>
+                    <li>
+                      <%= link_to 'administrator', '#', style: "color: red" %>
+                    </li>
+                    <li>
+                      <%= link_to 'API', '/oauth/applications', style: "color: blue" %>
+                    </li>
+                  <% end %>
+                  <li>
+                    <a href="/user/home">
+                      Welcome, <b><%= current_user.email %></b>
+                    </a>
+                  </li>
+                  <li>
+                    <%= link_to 'Edit', edit_user_registration_path %>
+                  </li>
+                  <li>
+                    <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+                  </li>
+              </ul>
+            </li>
+            <% if current_user.try(:admin?) %>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="separator">User Settings</li>
+                  <li class="divider"></li>
+
+                  <li><a href="/admin/manage-for-users">Users Managing</a></li>
+                  <li><a href="/admin/user/order">User Orders Managing</a></li>
+                  <li style="margin:9px 0;"></li>
+
+                  <li class="divider"></li>
+                  <li class="separator">Product Settings</li>
+                  <li class="divider"></li>
+
+                  <li><a href="/admin/product/new">Add Product</a></li>
+                  <li><a href="/admin/product">Products Managing</a></li>
+                  <li><a href="/admin/product/related">Related Products Managing</a></li>
+                  <li style="margin:9px 0;"></li>
+
+                  <li class="divider"></li>
+                  <li class="separator">Categories Settings</li>
+                  <li class="divider"></li>
+
+                  <li><a href="/admin/category/new">Add Category</a></li>
+                  <li><a href="/admin/category">Categories Managing</a></li>
+
+                  <li class="divider"></li>
+                  <li class="separator">Brand Settings</li>
+                  <li class="divider"></li>
+
+                  <li><a href="/admin/brand/new">Add Brand</a></li>
+                  <li><a href="/admin/brand">Brand Managing</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+            <% end %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+              <span class="glyphicon glyphicon-log-out"></span> Sign Out
+            <% end %>
+          </li>
+        </ul>
+          <% else %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+        </ul>
+          <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/cart" onclick="getCart(); return false;">
+              <div class="total">
+                <%= image_tag('cart-1.png', alt: "") %>
+                <% if cart_items.any? %>
+                  <span class="simpleCart_total">
+                    <%= format("%.2f", cart_total) %>$
+                  </span>
+                <% else %>
+                  <span class="simpleCart_total">Empty Cart</span>
+                <% end %>
+              </div>
+            </a>
+            <div class="clearfix"> </div>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+

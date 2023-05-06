@@ -1,0 +1,62 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs-main">
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/product/related">Related Products Managing</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="single">
+  <div class="single-main">
+    <div class="register-top heading">
+      <p><h2>EDIT RELATED PRODUCTS</h2></p>
+    </div>
+    <div class="container">
+      <div class="table">
+        <table id="productSizes" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th style="width:5%">№</th>
+              <th style="width:20%">Title</th>
+              <th style="width:10%">Brand</th>
+              <th style="width:23%">Category</th>
+              <th style="width:10%">Status</th>
+              <th style="width:10%">Price</th>
+              <th style="width:10%">Old Price</th>
+              <th style="width:15%"></th>
+            </tr>
+          </thead>
+          <tbody>
+          <% i=0 %>
+          <% @products.each do |product| %>
+            <tr>
+              <td scope="row"><strong><%= i+=1 %></strong></th>
+              <td><%= product.title %></td>
+              <td>
+                <% if product.brand %>
+                  <%= product.brand.title %>
+                <% end %>
+              </td>
+              <td>
+                <% if product.category %>
+                  <% product.category.path_ids.each do |id| %>
+                    <%= link_to Category.find(id).title, "/category/#{id}" %>&nbsp;
+                  <% end %>
+                <% end %>
+              </td>
+              <td><%= product.status %></td>
+              <td><%= product.price %></td>
+              <td><%= product.old_price %></td>
+              <td><%= link_to 'Edit related products', edit_admin_product_related_path(product.id) %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
